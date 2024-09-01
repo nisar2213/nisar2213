@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/fontawesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-page">
+      <header>
+        <div id="logo">
+          Nis
+          <p id="logo2">aR</p>
+        </div>
+        <nav>
+          <ul class="ul">
+            <li>
+              <a class="a active" href="/index.html" id="home1">Home</a>
+            </li>
+            <li>
+              <a class="a" href="/index.html#about-page" id="about1">About</a>
+            </li>
+            <li>
+              <a class="a" href="/index.html#contact-page" id="contact1"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a class="a" href="/index.html#skill-page" id="skills1">Skills</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="formPage">
+        <div class="formPage">
+          <h2 id="form-heading">Submit Request</h2>
+          <form action="#">
+            <div class="form-box">
+              <input type="text" id="name" placeholder="Fullname" required />
+              <input
+                type="text"
+                id="phone"
+                required
+                placeholder="Phone number"
+              />
+              <input
+                type="text"
+                id="Email"
+                required
+                placeholder="Email address"
+              />
+              <p>
+                <textarea
+                  name="description"
+                  id="description2"
+                  class="description"
+                  placeholder="Description"
+                ></textarea>
+              </p>
+              <input
+                type="button"
+                value="Submit"
+                id="form-btn"
+                class="sp-btn"
+                onclick="Frm()"
+              />
+            </div>
+          </form>
+        </div>
+        <h3 id="thanks">Thanks for requesting me!</h3>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="socials">
+            <div class="account">
+              <a class="facebook" href="	"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+            <div class="account">
+              <a class="whatsapp" href="https://wa.me/+923150904031"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+            <div class="account">
+              <a class="linkedin" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <p>&copy; All rights are reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

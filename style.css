@@ -1,0 +1,670 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* background-color: rgb(45, 108, 108); */
+  font-family: sans-serif;
+}
+header {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1212;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+nav {
+  height: 100%;
+  width: 20vw;
+  /* margin-left: 60px; */
+  /* background-color: blue; */
+  margin-right: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color: yellow; */
+}
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  /* border-bottom: 2px solid black; */
+  /* background-color: green; */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+  transition: 0.3s;
+  /* margin: 0 10px; */
+  /* background-color: yellow; */
+}
+
+ul a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: #ff5500;
+  transition: 0.3s;
+}
+.active::after,
+:hover:after {
+  width: 100%;
+}
+
+#logo {
+  padding-left: 3vw;
+  color: #ff5500;
+  font-size: 30px;
+  display: flex;
+  /* background-color: green; */
+}
+#logo2 {
+  /* background-color: white; */
+  color: #fff;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  background-color: lightgrey;
+}
+
+.container {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+#profile-img-back img {
+  /* background-color: red; */
+  position: relative;
+  left: -17px;
+  width: 270px;
+}
+
+#profile-img-back {
+  overflow: hidden;
+  background-color: #1b1212;
+  position: relative;
+  right: 7vw;
+  border-radius: 50%;
+  height: 270px;
+  width: 220px;
+  border: 3px solid #ff5500;
+  transition: 0.2s;
+}
+#profile-content {
+  height: 50vh;
+  position: relative;
+  right: 8vw;
+  max-width: 40vw;
+  margin-left: 6vw;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* background-color: green; */
+  /* overflow:hidden; */
+}
+.greetings {
+  display: flex;
+  /* background-color: red; */
+  /* height: 6vh; */
+  align-items: center;
+}
+.hi {
+  font-size: 15px;
+}
+.im {
+  padding-left: 5px;
+  /* height: 5vh; */
+  font-size: 2vw;
+}
+#nisar {
+  font-size: 4vw;
+  color: #ff5500;
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: bod;
+}
+.web-developer {
+  font-size: 2vw;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  font-family: "Varela Round", sans-serif;
+  writing-mode: horizontal-tb;
+  animation: web 3.5s alternate infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ff5500;
+}
+.profile-para {
+  font-size: 1vw;
+  margin-top: 1.3vw;
+}
+.hire-cv {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#hire,
+#cv {
+  /* padding: 10px; */
+  border: none;
+  border-radius: 8px;
+  height: 5.4vh;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+#hire {
+  margin-left: 10px;
+  color: #fff;
+  background-color: black;
+  width: 80px;
+}
+
+#cv {
+  width: 110px;
+  margin-right: 10px;
+  color: #fff;
+  background-color: #ff5500;
+}
+
+/**********************************  Hover Section  ****************************/
+
+.active,
+a:hover {
+  color: #ff5500;
+  /* transition: .1s; */
+}
+
+#hire:hover {
+  color: #1b1212;
+  background-color: #fff;
+  border: 1px solid #1b1212;
+}
+#cv:hover {
+  background-color: #ffff;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+
+#profile-img-back:hover {
+  box-shadow: 0 12px 40px rgba(227, 79, 20, 0.81);
+}
+
+/*****************  Keyframes animations  ***********************************************************/
+
+@keyframes web {
+  from {
+    width: 0;
+  }
+  to {
+    width: 33vw;
+  }
+}
+@keyframes mov {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/************************************** About page  ********************************************/
+
+.about-page {
+  background-color: #1b1212;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.about-page #profile-img-back {
+  /* background-color: green; */
+  /* margin-left: 60px; */
+  position: relative;
+  right: -10px;
+  animation: mov linear;
+  animation-timeline: view();
+  animation-range: entry 30%;
+}
+.about-page #profile-content {
+  /* background-color: red; */
+  color: #fff;
+}
+.about-page #profile-img-back img {
+  /* -webkit-transform: scaleX(-1); */
+  transform: scalex(-1);
+}
+.about-page .container #profile-content {
+  margin-top: 50px;
+}
+.about-page .container #profile-content .profile-para {
+  line-height: 22px;
+  margin-top: 10px;
+}
+#about-me {
+  font-size: 3vw;
+  color: #ff5500;
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  display: flex;
+  animation: mov linear;
+  animation-timeline: view();
+  animation-range: entry 30%;
+}
+
+#me {
+  padding-left: 1vw;
+  color: #ffff;
+}
+
+/* ******************************************* Contact page  ********************************************/
+
+#contact-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-box {
+  /* background-color: #ffff; */
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  width: 50%;
+  margin-top: 3vw;
+  /* display: none; */
+  animation: mov linear;
+  animation-timeline: view();
+  animation-range: entry 30%;
+}
+.contact-box h2 {
+  position: relative;
+  bottom: 15px;
+  display: flex;
+}
+#me2 {
+  color: #ff5500;
+  padding-left: 8px;
+}
+.form form {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  /* margin-top: 2vw; */
+  border-radius: 5px;
+}
+
+.form input {
+  border: none;
+  border-radius: 5px;
+  padding: 0 7px;
+  height: 5vh;
+  font-size: 12px;
+  background-color: #ffff;
+  width: 270px;
+  margin: 10px;
+}
+
+.form .sp-btn {
+  /* background-color: #79c532; */
+  width: 65px;
+  background-color: #ff5500;
+  height: 4.3vh;
+  color: #ffff;
+  cursor: pointer;
+}
+.sp-btn:hover {
+  background-color: #ffff;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+
+.description {
+  height: 18vh;
+  width: 270px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  margin: 10px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.form button {
+  width: 7vw;
+  height: 5vh;
+  border: none;
+  border-radius: 20px;
+}
+
+#contact-page h3 {
+  position: absolute;
+  color: #ff5500;
+  transition: all 1s;
+  visibility: hidden;
+}
+
+/************************* Skills page **************************************/
+
+#skill-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgray;
+  /* overflow: hidden; */
+}
+#skill-page h2 {
+  /* background-color: #c54f32; */
+  color: #ff5500;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.skill-box {
+  /* background-color: lightgray; */
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 80vh;
+  column-gap: 75px;
+}
+.skill-items {
+  /* background-color: red; */
+  width: 35vw;
+  height: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill-item {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 3px 8px;
+  margin: auto;
+  position: relative;
+}
+.html::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 95%;
+  height: 3px;
+  background-color: blue;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+/* .html:hover::after {
+  width: 95%;
+} */
+
+.css:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 90%;
+  height: 3px;
+  background-color: blue;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+.js:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 80%;
+  height: 3px;
+  background-color: blue;
+  border-radius: 5px;
+}
+.react:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 70%;
+  height: 3px;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.skill-box img {
+  border-radius: 10px;
+  width: 30vw;
+  margin: auto;
+  /* position: relative; */
+}
+.skill-img {
+  /* background-color: green; */
+  width: 30vw;
+  height: 43vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  position: relative;
+}
+
+/*******************  Form page ***********************************************/
+
+#formPage {
+  background-color: #fff;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#formPage h3 {
+  position: relative;
+  color: #ff5500;
+  transition: 1s;
+  font-size: 30px;
+  visibility: hidden;
+}
+.formPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+  /* background-color: red; */
+  position: absolute;
+  /* position: absolute; */
+  /* top: 6vh; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* visibility: hidden; */
+}
+
+#form-heading {
+  width: 40vw;
+  height: 8vh;
+  /* margin-top: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 10px; */
+  color: #fff;
+  background-color: #ff5500;
+}
+
+.form-box {
+  background-color: lightgray;
+  height: 55vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.form-box input {
+  border: none;
+  border-radius: 5px;
+  padding: 0 7px;
+  height: 5vh;
+  font-size: 12px;
+  background-color: #ffff;
+  width: 270px;
+  margin: 5px 0;
+}
+.form-box .sp-btn {
+  /* background-color: #79c532; */
+  width: 65px;
+  background-color: #ff5500;
+  height: 4.3vh;
+  color: #ffff;
+  cursor: pointer;
+}
+.sp-btn:hover {
+  background-color: #ffff;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+
+/*********************************  Footer  ******************************************************/
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: #1b1212;
+  color: #fff;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(143, 45, 45); */
+  height: 50px;
+  width: 240px;
+}
+.account {
+  /* background-color: green; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials a {
+  /* margin: 0 12px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  text-decoration: none;
+  background-color: #ffff;
+  /* border: 2px solid #ff5500; */
+  border-radius: 50%;
+}
+
+.socials a:hover {
+  width: 33px;
+  height: 33px;
+}
+.socials .facebook:hover {
+  box-shadow: 0px 5px 30px rgba(10, 135, 212, 0.792);
+}
+.socials .whatsapp:hover {
+  box-shadow: 0px 5px 30px rgba(37, 211, 102, 0.743);
+}
+.socials .linkedin:hover {
+  /* box-shadow: 0 3px 5px rgba(12, 174, 214, 0.8); */
+  box-shadow: 0px 5px 30px rgba(10, 135, 212, 0.692);
+}
+
+.fa-brands {
+  /* width: 30px; */
+  font-size: 25px;
+  border-radius: 50%;
+  transition: 0.1s;
+  /* display: none; */
+}
+.fa-facebook {
+  color: #1b1212;
+}
+.fa-facebook:hover {
+  color: #1877f2;
+}
+.fa-whatsapp {
+  color: #1b1212;
+}
+.fa-whatsapp:hover {
+  color: rgb(37, 211, 102);
+}
+.fa-linkedin {
+  color: #1b1212;
+}
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.footer p {
+  font-size: 13px;
+  /* background-color: blue; */
+  letter-spacing: 2px;
+}

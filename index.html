@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/fontawesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-page" id="main-page">
+      <header>
+        <div id="logo">
+          Nis
+          <p id="logo2">aR</p>
+        </div>
+        <nav>
+          <ul class="ul">
+            <li><a class="a active" href="#main-page" id="home">Home</a></li>
+            <li><a class="a" href="#about-page" id="about">About</a></li>
+            <li><a class="a" href="#contact-page" id="contact">Contact</a></li>
+            <li><a class="a" href="#skill-page" id="skills">Skills</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="profile-page">
+        <div class="container">
+          <div id="profile-img-back">
+            <img src="Nisar.png" alt="" " />
+          </div>
+          <div id="profile-content">
+            <div class="greetings">
+              <p class="hi">Hi,</p>
+              <div class="im">I'm</div>
+            </div>
+            <h2 id="nisar">Nisar Khan</h2>
+            <div class="web-developer">Frontend web deveoloper</div>
+            <div class="profile-para">
+              Hi, I'm Nisar Ahmad Khan belong to Pakistan, student of BS Computer Science.
+              <div class="hire-cv">
+                <a href="MyCV.pdf" download="" target="_blank"><input type="button" id="cv" value="Download CV" /></a>
+                <a href="/hire.html">
+                  <input type="button" id="hire" value="Hire me"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div id="about-page">
+      <div class="profile-page about-page" id="about-pg">
+        <div class="container">
+          <div id="profile-content">
+            <h2 id="about-me">About <div id="me">Me</div></h2>
+            <div class="profile-para">
+              Hi, I'm Nisar Ahmad Khan belong to Pakistan, currently studying in BS Computer Science. I'm also working as a front-end Web developer for past three years.
+            </div>
+          </div>
+          <div id="profile-img-back">
+            <img src="Nisar.png" alt="Nisar's Image" width="264px" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-page">
+      <div class="contact-box">
+  <h2>Contact <div id="me2"> Me</div></h2>
+  <div class="form">
+    <form action="#">
+      <!-- <label for="fullName">Enter your fullname</label> -->
+      <input type="text" id="fullName" required placeholder="Fullname">
+      <!-- <label for="phoneNo">Enter your phone number</label> -->
+      <input type="number" id="number" required placeholder="Phone Number">
+      <!-- <label for="email">Enter your email address</label> -->
+      <input type="email" id="email" required placeholder="Email Address">
+      <p><textarea name="description" id="description" class="description" placeholder="Description"></textarea></p>
+     <a href="/cv.html"><input type="button" value="Submit" id="contact-btn" class="sp-btn"></a>
+    
+    </form>
+  </div>
+</div>
+<h3>Thanks for reaching me!</h3>
+    </div>
+
+    <div id="skill-page">
+      <h2>Skills</h2>
+      <div class="skill-box">
+        <div class="skill-items">
+          <div class="skill-item html">
+          <p>HTML</p>
+          <p>95%</p>
+        </div>
+        <div class="skill-item css">
+          <p>CSS</p>
+          <p>90%</p>
+        </div>
+        <div class="skill-item js">
+          <p>JavaScript</p>
+          <p>80%</p>
+          </div>
+          <div class="skill-item react">
+            <p>React</p>
+            <p>70%</p>
+            </div>
+        </div>
+        <div class="skill-img"><img src="skill-img.webp" alt=""></div>
+      </div>
+
+    </div>
+
+<footer>
+  <div class="footer">
+    <div class="socials">
+     <div class="account"> <a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></div>
+     <div class="account"> <a class="whatsapp" href="https://wa.me/+923150904031"><i class="fa-brands fa-whatsapp"></i></a></div>
+     <div class="account"> <a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+    </div>
+    <p>&copy; All rights are reserved </p>
+  </div>
+</footer>
+
+      
+    <script src="script.js"></script>
+  </body>
+</html>
